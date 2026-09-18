@@ -5,9 +5,6 @@ import fastf1
 import pandas as pd
 from pathlib import Path
 
-# Cache path is relative to THIS file's location, not the current working
-# directory — so it works the same whether you run this from the project
-# root, from inside ingestion/, or later from inside Airflow.
 CACHE_DIR = Path(__file__).parent / "fastf1_cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 fastf1.Cache.enable_cache(str(CACHE_DIR))

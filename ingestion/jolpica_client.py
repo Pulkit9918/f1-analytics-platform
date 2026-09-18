@@ -1,5 +1,4 @@
-"""Pulls race results, qualifying, pit stops, drivers, constructors from Jolpica-F1
-(the actively-maintained Ergast-compatible successor API)."""
+"""Pulls race results, qualifying, pit stops, drivers, constructors from Jolpica-F1"""
 
 from typing import Optional
 import requests
@@ -14,7 +13,7 @@ def _get(endpoint: str, limit: int = 100, offset: int = 0) -> dict:
     url = f"{BASE_URL}/{endpoint}.json?limit={limit}&offset={offset}"
     resp = requests.get(url, headers=HEADERS, timeout=30)
     resp.raise_for_status()
-    time.sleep(0.3)  # be polite to a volunteer-run API
+    time.sleep(0.3)
     return resp.json()
 
 
@@ -74,7 +73,6 @@ def get_qualifying(season: int, round_: int) -> pd.DataFrame:
 
 
 def _parse_duration_to_ms(duration_str: str) -> Optional[int]:
-    """Handles both '23.542' (seconds) and '1:14.773' (minutes:seconds) formats."""
     if not duration_str:
         return None
     try:
