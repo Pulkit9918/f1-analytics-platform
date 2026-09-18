@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'dbt_project/**'
+  workflow_dispatch:
 
 jobs:
   dbt-test:
