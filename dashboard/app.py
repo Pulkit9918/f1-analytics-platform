@@ -1,3 +1,5 @@
+# Streamlit dashboard querying the F1_DB.ANALYTICS directly from Snowflake. Deployed on Streamlit Community Cloud. 
+
 import streamlit as st
 import pandas as pd
 import snowflake.connector

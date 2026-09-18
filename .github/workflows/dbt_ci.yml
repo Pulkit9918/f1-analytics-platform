@@ -1,3 +1,5 @@
+# Runs dbt build against Snowflake on every push. Credentials come from Github repo secrets. 
+
 name: dbt CI
 
 on:

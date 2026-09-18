@@ -1,4 +1,4 @@
-"""Loads pandas DataFrames from ingestion scripts directly into Snowflake RAW tables."""
+# Loads pandas DataFrames from ingestion scripts into Snowflake RAW tables and overwrites the target table on each load. 
 
 import snowflake.connector
 from snowflake.connector.pandas_tools import write_pandas

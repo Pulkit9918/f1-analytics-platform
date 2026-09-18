@@ -1,5 +1,4 @@
-"""Pulls lap-by-lap timing, tire stints, and telemetry via FastF1
-(official F1 timing data, same source broadcasters use)."""
+# Pulls lap-by-lap timing, tire stints, and telemetry from FastF1.
 
 import fastf1
 import pandas as pd

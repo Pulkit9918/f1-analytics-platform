@@ -1,3 +1,5 @@
+# Local test for the ingestion pipeline. Run this before wiring anything into Airflow, to confirm the credentials and API access. 
+
 from ingestion.jolpica_client import get_races, get_results, get_qualifying, get_pit_stops, get_drivers, get_constructors
 from ingestion.fastf1_client import get_laps, get_stints
 from ingestion.snowflake_loader import load_df

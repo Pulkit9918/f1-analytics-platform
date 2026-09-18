@@ -1,3 +1,5 @@
+# dbt connection profile used inside the Airflow Docker containers. 
+
 f1_dbt:
   target: docker
   outputs:

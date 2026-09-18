@@ -1,4 +1,4 @@
-"""Pulls race results, qualifying, pit stops, drivers, constructors from Jolpica-F1"""
+# Pulls race results, qualifying, pit stops, drivers, constructors from Jolpica-F1.
 
 from typing import Optional
 import requests

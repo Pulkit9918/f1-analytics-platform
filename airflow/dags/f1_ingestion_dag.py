@@ -1,3 +1,5 @@
+# Airflow DAG for F1 data ingestion and transformation using dbt.
+
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
