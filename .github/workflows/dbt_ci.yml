@@ -44,4 +44,4 @@ jobs:
         working-directory: dbt_project
         run: |
           dbt deps || true
-          dbt build
+          dbt build --profiles-dir ~/.dbt
