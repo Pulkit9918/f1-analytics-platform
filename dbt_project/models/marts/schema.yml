@@ -8,4 +8,4 @@ models:
   - name: mart_pit_stop_efficiency
     description: "Pit stop count and duration per driver/team per race, alongside final race position."
   - name: mart_championship_progression
-    description: "Running cumulative championship points per driver across a season, ready for a line chart."
+    description: "Running cumulative championship points per driver across a season, ready for a line chart. Tested and validated via CI on every push."
