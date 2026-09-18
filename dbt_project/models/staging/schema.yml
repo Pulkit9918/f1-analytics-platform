@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: raw
+    database: F1_DB
+    schema: RAW
+    tables:
+      - name: races
+      - name: results
+      - name: qualifying
+      - name: pit_stops
+      - name: drivers
+      - name: constructors
+      - name: laps
+      - name: stints
+
+models:
+  - name: stg_results
+    columns:
+      - name: driver_id
+        tests: [not_null]
+      - name: season
+        tests: [not_null]
+  - name: stg_drivers
+    columns:
+      - name: driver_id
+        tests: [unique, not_null]
+  - name: stg_constructors
+    columns:
+      - name: constructor_id
+        tests: [unique, not_null]

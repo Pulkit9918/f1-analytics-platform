@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+fastf1_cache/
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+airflow/.env
+airflow/logs/
+dashboard/.streamlit/secrets.toml

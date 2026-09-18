@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: int_race_results_enriched
+    description: "Race results enriched with driver, constructor, and race name/date."
+  - name: int_laps_enriched
+    description: "Lap-by-lap timing enriched with driver name and tire stint number."

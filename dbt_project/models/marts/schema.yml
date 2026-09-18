@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: mart_qualifying_vs_race_pace
+    description: "Grid position vs finish position per driver per race — who overperforms/underperforms relative to qualifying."
+  - name: mart_tire_stint_performance
+    description: "Lap time and degradation per tire compound per stint."
+  - name: mart_pit_stop_efficiency
+    description: "Pit stop count and duration per driver/team per race, alongside final race position."
+  - name: mart_championship_progression
+    description: "Running cumulative championship points per driver across a season, ready for a line chart."
