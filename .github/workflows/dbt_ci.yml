@@ -32,7 +32,7 @@ jobs:
                 type: snowflake
                 account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
                 user: ${{ secrets.SNOWFLAKE_USER }}
-                password: ${{ secrets.SNOWFLAKE_PASSWORD }}
+                password: "${{ secrets.SNOWFLAKE_PASSWORD }}"
                 role: TRANSFORM_ROLE
                 database: F1_DB
                 warehouse: F1_WH
